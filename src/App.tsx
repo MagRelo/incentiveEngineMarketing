@@ -1,23 +1,9 @@
 import React from 'react';
 
-import Header from './components/header';
-import Home from './pages/home';
-
 function App() {
   return (
-    <div className='app'>
-      <Header />
-
-      <div>
-        <Home />
-      </div>
-
-      <div className='stripe'></div>
-      <footer>
-        <div className='container'>
-          <p>{new Date().getFullYear()}</p>
-        </div>
-      </footer>
+    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+      <h1 className="text-6xl font-bold text-gray-800">DistroEngine</h1>
     </div>
   );
 }
