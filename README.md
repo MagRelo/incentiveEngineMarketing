@@ -1,15 +1,36 @@
-# Servesa.io Homepage
+# DistroEngine
 
 Personal portfolio and homepage built with React, TypeScript, and Vite. Features a modern design showcasing biography, recent projects, and writing/blog posts.
 
-## Features
+## Site Layout
 
-- **Bio Section** - Professional introduction and technical toolkit
-- **Recent Projects** - Showcase of recent work with interactive project cards
-- **Writing** - Blog articles and written content
-- **Responsive Design** - Mobile-friendly layout with modern CSS
-- **Lightbox Gallery** - Image viewing capabilities using fslightbox-react
-- **Masonry Layout** - Responsive grid layouts for projects and blog posts
+This document outlines the layout of the DistroEngine site for content scaffolding.
+
+### Title Section
+
+- Height: 70% of viewport
+- Centered content
+- Elements:
+  - Title: DistroEngine
+  - Subtitle: Incentive Toolkit for building massive networks
+  - Social Proof: Quote tweet: https://x.com/justinkan/status/1059989657218248704?lang=en
+
+### Content Sections
+
+1. Section 1: ValuableToken
+
+   - [FILL IN SECTION 1 CONTENT]
+
+2. Section 2: ReferralTree
+
+   - [FILL IN SECTION 2 CONTENT]
+
+3. Section 3: Social
+   - [FILL IN SECTION 3 CONTENT]
+
+### Footer
+
+- 2026
 
 ## Tech Stack
 
