@@ -1,53 +1,36 @@
-# DistroEngine
+# IncentiveEngine
 
-Personal portfolio and homepage built with React, TypeScript, and Vite. Features a modern design showcasing biography, recent projects, and writing/blog posts.
+Smart contract toolkit that turns users into your growth team. Built with React, TypeScript, and Vite.
 
-## Site Layout
+## Overview
 
-This document outlines the layout of the DistroEngine site for content scaffolding.
+IncentiveEngine is a collection of smart contract tools designed to help projects build sustainable growth through economic incentives. The toolkit includes:
 
-### Title Section
+### YieldToken
 
-- Height: 70% of viewport
-- Centered content
-- Elements:
-  - Title: DistroEngine
-  - Subtitle: Incentive Toolkit for building massive networks
-  - Social Proof: Quote tweet: https://x.com/justinkan/status/1059989657218248704?lang=en
+Create tokens with built-in economic incentives. Plug into a variety of yield protocols to encourage users to hold and use your token. Adjust the token's velocity with concepts such as staking rewards, demurrage, and more.
 
-### Content Sections
+Use in conjunction with **ReferralTree** to create a positive feedback loop that aligns token holders with long-term project success.
 
-1. Section 1: ValuableToken
+### ReferralTree
 
-   - [FILL IN SECTION 1 CONTENT]
+Implements a multi-level referral program with automated reward distribution. Unlock viral growth by incentivizing your users to refer new users to your product. Users can build multi-level networks where referrers earn commissions on their network's activity, creating sustainable growth incentives for decentralized applications.
 
-2. Section 2: ReferralTree
-
-   - [FILL IN SECTION 2 CONTENT]
-
-3. Section 3: Social
-   - [FILL IN SECTION 3 CONTENT]
-
-### Footer
-
-- 2026
+Use in conjunction with **YieldToken** to create a positive feedback loop that aligns token holders with long-term project success.
 
 ## Tech Stack
 
 - **Frontend Framework**: React 18.3.1
 - **Language**: TypeScript 5.6.3
 - **Build Tool**: Vite 6.0.1
-- **Styling**: CSS with custom variables and diagonal section designs
+- **Styling**: Tailwind CSS 4.1.18
 - **Server**: Express 4.21.2 (for production static file serving)
 - **Containerization**: Docker (multi-stage Alpine builds)
-- **Key Libraries**:
-  - `fslightbox-react` - Image lightbox functionality
-  - `react-responsive-masonry` - Responsive masonry grid layouts
 
 ## Prerequisites
 
 - Node.js (current version recommended)
-- npm or yarn
+- pnpm (package manager)
 - Docker (for containerized deployment)
 
 ## Installation
@@ -55,16 +38,14 @@ This document outlines the layout of the DistroEngine site for content scaffoldi
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
-cd mattlovan
+git clone https://github.com/MagRelo/incentiveEngineMarketing.git
+cd incentiveEngineMarketing
 ```
 
 2. Install dependencies:
 
 ```bash
-npm install
-# or
-yarn install
+pnpm install
 ```
 
 ## Development
@@ -72,21 +53,17 @@ yarn install
 Start the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
+pnpm run dev
 ```
 
-The app will be available at `http://localhost:3000` (as configured in `vite.config.js`).
+The app will be available at `http://localhost:5173` (default Vite port).
 
 ## Building
 
 Build the production bundle:
 
 ```bash
-npm run build
-# or
-yarn build
+pnpm run build
 ```
 
 This creates an optimized production build in the `build/` directory.
@@ -100,9 +77,7 @@ The project includes a multi-stage Dockerfile for efficient containerized deploy
 1. Build and push Docker image (production):
 
 ```bash
-npm run build-prod
-# or
-yarn build-prod
+pnpm run build-prod
 ```
 
 This command:
@@ -131,9 +106,7 @@ The server will start on port 8080 (configurable via `PORT` environment variable
 For production, serve the built files with Express:
 
 ```bash
-npm run serve
-# or
-yarn serve
+pnpm run serve
 ```
 
 The server serves static files from the `build/` directory with 1-year cache headers for optimal performance.
@@ -142,21 +115,19 @@ The server serves static files from the `build/` directory with 1-year cache hea
 
 ```
 src/
-├── components/       # React components
-│   ├── blog/        # Blog-related components
-│   ├── project/     # Project showcase components
-│   └── header.tsx   # Site header
+├── assets/          # SVG graphics and assets
+│   ├── YieldTokenGraphic.tsx
+│   └── ReferralTreeGraphic.tsx
 ├── pages/           # Page components
-│   └── home.tsx     # Home page
-├── css/             # Global styles and CSS variables
-├── fonts/           # Custom fonts (Roboto family)
-├── images/          # Image assets
-└── App.tsx          # Main app component
+│   └── home.tsx     # Home page (if used)
+├── App.tsx          # Main app component
+└── index.tsx        # Entry point
 
 build/               # Production build output
-public/              # Static public assets
+public/              # Static public assets (favicons, images, etc.)
 server.js            # Express server for production
 Dockerfile           # Multi-stage Docker build configuration
+tailwind.config.js   # Tailwind CSS configuration
 ```
 
 ## Scripts
