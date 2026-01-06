@@ -20,9 +20,15 @@ function App() {
               Engine
             </span>
           </h1>
-          <p className='text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-600 mb-8 sm:mb-12 px-2 font-medium leading-relaxed'>
+          <p className='text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-600  px-2 font-medium leading-relaxed'>
             Turn users into your growth team
           </p>
+
+          <p className='text-base sm:text-lg md:text-xl text-slate-500 max-w-3xl mx-auto mt-2 sm:mt-4 md:mt-6 mb-8 sm:mb-12 md:mb-16 px-4 font-normal leading-relaxed'>
+            DistroEngine is a plug-and-play toolkit of crypto-incentives to
+            unlock viral growth.
+          </p>
+
           <blockquote className='relative border-l-4 border-indigo-500 px-6 sm:px-8 py-6 sm:py-8 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg shadow-indigo-100/50 mx-auto w-full max-w-2xl transition-all duration-300 hover:shadow-xl hover:shadow-indigo-200/50 mb-8'>
             <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-br from-indigo-50/50 to-transparent rounded-xl pointer-events-none' />
             <p className='relative text-slate-700 italic text-base sm:text-lg md:text-xl leading-relaxed font-medium'>
@@ -36,11 +42,6 @@ function App() {
               — Justin Kan
             </cite>
           </blockquote>
-
-          <p className='text-base sm:text-lg md:text-xl text-slate-500 max-w-3xl mx-auto mt-8 sm:mt-10 md:mt-12 px-4 font-normal leading-relaxed'>
-            DistroEngine is a plug-and-play toolkit of crypto-incentives to
-            unlock viral growth.
-          </p>
         </div>
       </section>
 
