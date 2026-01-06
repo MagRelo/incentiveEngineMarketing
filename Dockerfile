@@ -1,26 +1,43 @@
-
-# Step 1: choose a smaller base image
+# Build stage
 FROM node:current-alpine AS build
 
-# Step 2: only copy in what you need
-ARG APP_HOME=/app/
-RUN mkdir -pv /app/
+# Install pnpm
+RUN npm install -g pnpm
+
 WORKDIR /app/
 
-# Step 3: Copy npm dependencies & install
-ENV NPM_CONFIG_LOGLEVEL=warn
-ENV NODE_ENV=production
-COPY package.json yarn.lock /app/
-RUN yarn
+# Copy package files
+COPY package.json pnpm-lock.yaml ./
 
-# Step #4: copy app files
-COPY build /app/build/
-COPY server.js /app/
+# Install dependencies (including devDependencies for build)
+RUN pnpm install --frozen-lockfile
 
-# Step 4: use a multi-stage build
+# Copy source files
+COPY . .
+
+# Build the application
+RUN pnpm run build
+
+# Production stage
 FROM node:current-alpine
-COPY --from=build /app /
 
-# start
+# Install pnpm for runtime
+RUN npm install -g pnpm
+
+WORKDIR /app/
+
+# Copy package files for runtime dependencies
+COPY package.json pnpm-lock.yaml ./
+
+# Install only production dependencies
+RUN pnpm install --prod --frozen-lockfile
+
+# Copy built application and server from build stage
+COPY --from=build /app/build ./build
+COPY --from=build /app/server.js ./
+
+# Expose port
 EXPOSE 8080
-CMD [ "yarn", "run", "serve" ]
+
+# Start server
+CMD [ "node", "server.js" ]
