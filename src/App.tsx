@@ -35,7 +35,9 @@ function App() {
               "First time founders are obsessed with product.
               <span className='block h-4' />
               Second time founders are obsessed with{' '}
-              <span className='text-red-600 font-semibold'>distribution</span>
+              <span className='bg-gradient-to-r from-red-600 via-red-500 to-orange-500 bg-clip-text text-transparent font-semibold'>
+                distribution
+              </span>
               ."
             </p>
             <cite className='relative text-sm sm:text-base text-slate-500 block mt-4 sm:mt-6 font-normal not-italic'>
