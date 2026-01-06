@@ -74,7 +74,7 @@ export function ReferralTreeGraphic() {
         stroke='#2563eb'
         strokeWidth='2'
       />
-      <text
+      {/* <text
         x='200'
         y='250'
         textAnchor='middle'
@@ -82,8 +82,7 @@ export function ReferralTreeGraphic() {
         fontSize='14'
         fontFamily='system-ui, sans-serif'>
         ReferralTree
-      </text>
+      </text> */}
     </svg>
   );
 }
-

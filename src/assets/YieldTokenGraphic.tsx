@@ -20,7 +20,7 @@ export function YieldTokenGraphic() {
       />
       <circle cx='200' cy='150' r='40' fill='#10b981' opacity='0.2' />
       <circle cx='200' cy='150' r='20' fill='#10b981' />
-      <text
+      {/* <text
         x='200'
         y='180'
         textAnchor='middle'
@@ -28,8 +28,7 @@ export function YieldTokenGraphic() {
         fontSize='14'
         fontFamily='system-ui, sans-serif'>
         YieldToken
-      </text>
+      </text> */}
     </svg>
   );
 }
-
