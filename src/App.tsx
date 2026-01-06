@@ -38,8 +38,8 @@ function App() {
           </blockquote>
 
           <p className='text-base sm:text-lg md:text-xl text-slate-500 max-w-3xl mx-auto mt-8 sm:mt-10 md:mt-12 px-4 font-normal leading-relaxed'>
-            DistroEngine is a plug-and-play toolkit of crypto-incentives to help
-            you grow your product.
+            DistroEngine is a plug-and-play toolkit of crypto-incentives to
+            unlock viral growth.
           </p>
         </div>
       </section>
@@ -117,9 +117,9 @@ function App() {
                     built-in economic incentives
                   </span>
                   to encourage users to hold and use your token. Plug into a
-                  variety of yield protocols to reward token holders. Adjust the
-                  token's velocity with concepts such as staking rewards,
-                  demurrage, and more.
+                  variety of yield protocols to reward token holders with
+                  interest income. Adjust the token's velocity & inflation with
+                  concepts such as staking rewards, demurrage, and more.
                 </span>
                 <span className='block pt-3'>
                   Use in conjunction with{' '}
@@ -207,11 +207,10 @@ function App() {
                   <span className='font-semibold text-red-600 bg-red-50 px-1.5 py-0.5 rounded'>
                     multi-level referral program
                   </span>{' '}
-                  with automated reward distribution. Unlock viral growth by
-                  incentivizing your users to refer new users to your product.
-                  Users can build multi-level networks where referrers earn
-                  commissions on their network's activity, creating sustainable
-                  growth incentives for network growth.
+                  with automated reward distribution. Users can build
+                  multi-level networks where they earn rewards on their
+                  network's activity, creating sustainable incentives for
+                  network growth.
                 </span>
                 <span className='block pt-3'>
                   Use in conjunction with{' '}
