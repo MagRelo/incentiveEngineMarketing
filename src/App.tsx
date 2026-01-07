@@ -6,9 +6,9 @@ function App() {
   return (
     <div className='min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900'>
       {/* Title Section - Hero with gradient background */}
-      <section className='relative flex items-center justify-center px-4 sm:px-6 py-20 sm:py-28 md:py-32 overflow-hidden'>
+      <section className='relative flex items-center justify-center px-4 sm:px-6 pt-20 pb-16 sm:py-28 md:py-32 overflow-hidden'>
         {/* Background gradient with subtle pattern */}
-        <div className='absolute inset-0 bg-gradient-to-br from-indigo-50 via-white to-slate-50' />
+        <div className='absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900' />
         <div className='absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(99,102,241,0.1),transparent_50%)]' />
 
         <div className='relative text-center max-w-5xl w-full z-10'>
@@ -16,19 +16,19 @@ function App() {
             <span className='bg-gradient-to-r from-red-600 via-red-500 to-orange-500 bg-clip-text text-transparent'>
               Distro
             </span>
-            <span className='bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent'>
+            <span className='bg-slate-400 bg-clip-text text-transparent'>
               Engine
             </span>
           </h1>
-          <p className='text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-600  px-2 font-medium leading-relaxed'>
-            Turn users into your growth team
+          <p className='text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-300  px-2 font-medium leading-relaxed'>
+            Incentive-Compatible Economic Toolkit
           </p>
 
-          <p className='text-base sm:text-lg md:text-xl text-slate-500 max-w-3xl mx-auto mt-2 sm:mt-4 md:mt-6 mb-8 sm:mb-12 md:mb-16 px-4 font-normal leading-relaxed'>
-            DistroEngine is a plug-and-play toolkit of crypto-incentives to
-            unlock viral growth.
+          <p className='text-base sm:text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mt-2 sm:mt-4 md:mt-6 mb-8 sm:mb-12 md:mb-16 px-4 font-normal leading-relaxed'>
+            A collection of crypto primitives for building massive networks of
+            motivated humans & AI agents
           </p>
-
+          {/* 
           <blockquote className='relative border-l-4 border-indigo-500 px-6 sm:px-8 py-6 sm:py-8 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg shadow-indigo-100/50 mx-auto w-full max-w-2xl transition-all duration-300 hover:shadow-xl hover:shadow-indigo-200/50 mb-8'>
             <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-br from-indigo-50/50 to-transparent rounded-xl pointer-events-none' />
             <p className='relative text-slate-700 italic text-base sm:text-lg md:text-xl leading-relaxed font-medium'>
@@ -43,7 +43,7 @@ function App() {
             <cite className='relative text-sm sm:text-base text-slate-500 block mt-4 sm:mt-6 font-normal not-italic'>
               — Justin Kan
             </cite>
-          </blockquote>
+          </blockquote> */}
         </div>
       </section>
 
@@ -119,13 +119,17 @@ function App() {
                   <span className='font-semibold text-red-600 bg-red-50 px-1.5 py-0.5 rounded'>
                     built-in economic incentives
                   </span>
-                  to encourage users to hold and use your token. Plug into a
-                  variety of yield protocols to reward token holders with
-                  interest income. Adjust the token's velocity & inflation with
-                  concepts such as staking rewards, demurrage, and more.
+                  to encourage users to hold and use your token. Plug into yield
+                  protocols to reward token holders with interest income. Adjust
+                  the token's velocity & inflation with staking rewards,
+                  demurrage, and more.
                 </span>
                 <span className='block pt-3'>
-                  Use in conjunction with{' '}
+                  Combine{' '}
+                  <span className='font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded'>
+                    YieldToken
+                  </span>{' '}
+                  &{' '}
                   <span className='font-bold text-indigo-600 bg-indigo-50 px-1.5 py-0.5 rounded'>
                     ReferralTree
                   </span>{' '}
@@ -206,22 +210,26 @@ function App() {
               </div>
               <p className='text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed space-y-4'>
                 <span>
-                  ReferralTree implements a{' '}
+                  Build viral growth through{' '}
                   <span className='font-semibold text-red-600 bg-red-50 px-1.5 py-0.5 rounded'>
-                    multi-level referral program
-                  </span>{' '}
-                  with automated reward distribution. Users can build
-                  multi-level networks where they earn rewards on their
-                  network's activity, creating sustainable incentives for
-                  network growth.
+                    multi-level referral rewards
+                  </span>
+                  . When a user joins your platform, they can earn rewards not
+                  just from their own referrals, but also from their referrer's
+                  referrals, and their referrer's referrer's referrals -
+                  creating a powerful incentive for your users to grow the
+                  network.
                 </span>
                 <span className='block pt-3'>
-                  Use in conjunction with{' '}
+                  Combine{' '}
+                  <span className='font-bold text-indigo-600 bg-indigo-50 px-1.5 py-0.5 rounded'>
+                    ReferralTree
+                  </span>{' '}
+                  &{' '}
                   <span className='font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded'>
                     YieldToken
                   </span>{' '}
-                  to create a positive feedback loop that aligns token holders
-                  with long-term project success.
+                  to super-charge network growth and attract valuable new users.
                 </span>
               </p>
             </div>
@@ -234,7 +242,7 @@ function App() {
         <div className='absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(99,102,241,0.1),transparent_70%)]' />
         <div className='relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
           <p className='text-sm sm:text-base font-medium'>
-            © 2026 IncentiveEngine
+            © 2026 DistroEngine
           </p>
         </div>
       </footer>
